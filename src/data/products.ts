@@ -199,41 +199,40 @@ export const products: Product[] = [
   },
   {
     id: '6',
-    slug: 'mini-saas-boilerplate',
-    title: 'Mini SaaS Boilerplate',
-    shortDescription: 'Complete SaaS starter with auth, payments, dashboard, and landing page.',
-    fullDescription: 'Everything you need to launch your SaaS in a weekend. Authentication, Stripe payments, user dashboard, admin panel, and a converting landing page.',
-    price: 149,
+    slug: 'spotify-premium',
+    title: 'Spotify Premium',
+    shortDescription: 'Premium Spotify subscription with ad-free music, offline downloads, and unlimited skips.',
+    fullDescription: 'Stream unlimited music with Spotify Premium. Enjoy ad-free listening, download songs for offline, unlimited skips, and high-quality audio on any device.',
+    price: 8000,
     category: 'saas',
     badge: 'Premium',
     features: [
-      'Complete auth system',
-      'Stripe subscription billing',
-      'User & admin dashboards',
-      'Landing page templates',
-      'Email notifications',
-      'Analytics integration'
+      'Ad-free music streaming',
+      'Unlimited skips',
+      'Offline downloads',
+      'High-quality audio',
+      '100M+ songs library',
+      'Podcasts included'
     ],
     requirements: [
-      'Node.js 18+',
-      'PostgreSQL',
-      'Stripe account',
-      'Email service (optional)'
+      'Valid email address',
+      'Spotify app or browser',
+      'Internet connection'
     ],
     whatsIncluded: [
-      'Full source code',
-      'Database schema',
-      'Stripe integration guide',
-      'Deployment tutorials',
-      '90 days priority support',
-      'Lifetime updates'
+      '1 Month Spotify Premium subscription',
+      'Ad-free music experience',
+      'Download for offline listening',
+      'High-quality audio (320kbps)',
+      'Instant account activation',
+      '24hr support with admin'
     ],
     faq: [
-      { question: 'What\'s the tech stack?', answer: 'Next.js 14, TypeScript, Tailwind CSS, Prisma, PostgreSQL, and Stripe.' },
-      { question: 'Can I use a different payment provider?', answer: 'The boilerplate is built for Stripe, but the architecture makes it easy to swap providers.' },
-      { question: 'Is there a demo?', answer: 'Yes! Contact us on Telegram for a live demo link.' }
+      { question: 'How do I receive my subscription?', answer: 'After payment, you\'ll receive login credentials via Telegram within 5 minutes.' },
+      { question: 'Can I download songs for offline?', answer: 'Yes! Download unlimited songs and playlists to listen offline.' },
+      { question: 'Which devices are supported?', answer: 'Phone, tablet, computer, smart speakers, gaming consoles, and car audio systems.' }
     ],
-    telegramLink: 't.me/AlphaTechBot?start=mini-saas-boilerplate'
+    telegramLink: 't.me/AlphaTechBot?start=spotify-premium'
   }
 ];
 
