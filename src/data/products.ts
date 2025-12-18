@@ -58,7 +58,7 @@ export const products: Product[] = [
     title: 'ChatGPT Plus',
     shortDescription: 'Premium ChatGPT subscription with GPT-4, faster responses, and priority access.',
     fullDescription: 'Get full access to ChatGPT Plus with GPT-5.2, DALL-E image generation, advanced data analysis, and priority access during peak times.',
-    price: 25000,
+    price: 15000,
     category: 'scripts',
     features: [
       'GPT-5.2 access',
