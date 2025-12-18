@@ -25,10 +25,10 @@ import spotifyPremiumImg from '@/assets/products/spotify-premium.png';
 export const products: Product[] = [
   {
     id: '1',
-    slug: 'canva-pro',
-    title: 'Canva Pro',
-    shortDescription: 'Premium Canva subscription with unlimited access to all pro features and templates.',
-    fullDescription: 'Get full access to Canva Pro with unlimited premium templates, brand kits, background remover, magic resize, and 100GB cloud storage. Perfect for creators and businesses.',
+    slug: 'premium-design-tool',
+    title: 'ကမ်ဗာ ပရို',
+    shortDescription: 'Premium ကမ်ဗာ ပရို subs with unlimited access to all pro features and templates.',
+    fullDescription: 'Get full access to ကမ်ဗာ ပရို with unlimited premium templates, brand kits, background remover, magic resize, and 100GB cloud storage. Perfect for creators and businesses.',
     price: 10000,
     category: 'bots',
     badge: 'Popular',
@@ -36,8 +36,9 @@ export const products: Product[] = [
     features: [
       '100+ million premium templates',
       'Background remover tool',
-      'Magic resize for all formats',
-      'Brand kit with custom fonts',
+      'resize for all formats',
+      'myanmar fonts',
+      'custom brand asset management',
       '100GB cloud storage',
       'Schedule social media posts'
     ],
@@ -47,9 +48,9 @@ export const products: Product[] = [
       'Internet connection'
     ],
     whatsIncluded: [
-      '1 Month Canva Pro subscription',
+      '1 Month ကမ်ဗာ ပရို subs',
       'Access to all premium features',
-      'Canva AI (Magic Write, Text to Image, Text to Video)',
+      'ကမ်ဗာ အေအိုင် (Magic Write, Text to Image, Text to Video)',
       'Priority customer support',
       'Instant account activation',
       'Renewal reminder'
@@ -57,24 +58,24 @@ export const products: Product[] = [
     faq: [
       { question: 'How do I receive my subscription?', answer: 'After payment, you\'ll receive login credentials via Telegram within 5 minutes.' },
       { question: 'Is this a personal or team account?', answer: 'This is a personal Canva Pro account with full premium features.' },
-      { question: 'Can I use this for commercial projects?', answer: 'Yes! Canva Pro license allows commercial use of all designs.' }
+      { question: 'Can I use this for commercial projects?', answer: 'Yes! ကမ်ဗာ ပရို license allows commercial use of all designs.' }
     ],
-    telegramLink: 't.me/AlphaTechBot?start=canva-pro'
+    telegramLink: 't.me/AlphaTechBot?start=ကမ်ဗာ-ပရို'
   },
   {
     id: '2',
-    slug: 'chatgpt-plus',
-    title: 'ChatGPT Plus',
-    shortDescription: 'Premium ChatGPT subscription with GPT-4, faster responses, and priority access.',
-    fullDescription: 'Get full access to ChatGPT Plus with GPT-5.2, DALL-E image generation, advanced data analysis, and priority access during peak times.',
+    slug: 'ချက်ဂျီပီတီ +',
+    title: 'ချက်ဂျီပီတီ +',
+    shortDescription: 'ချက်ဂျီပီတီ+ subs with GPT-4, faster responses, and priority access.',
+    fullDescription: 'Get full access to ချက်ဂျီပီတီ+ with GPT-5.2, DALL-E image generation, advanced data analysis, and priority access during peak times.',
     price: 15000,
     category: 'scripts',
     image: chatgptPlusImg,
     features: [
-      'GPT-5.2 access',
+      'ဂျီပီတီ-5.2 access',
       'DALL-E 3 image generation',
       'Advanced Data Analysis',
-      'Custom GPTs creation',
+      'Custom ဂျီပီတီ creation',
       'Priority access during peak times',
       'Faster response speed'
     ],
@@ -84,8 +85,8 @@ export const products: Product[] = [
       'Internet connection'
     ],
     whatsIncluded: [
-      '1 Month ChatGPT Plus subscription',
-      'Access to all GPT-5.2 features',
+      '1 Month ချက်ဂျီပီတီ + subs',
+      'Access to all ဂျီပီတီ-5.2 features',
       'DALL-E 3 image generation',
       'Code X feature',
       'Instant account activation',
@@ -93,15 +94,15 @@ export const products: Product[] = [
     ],
     faq: [
       { question: 'How do I receive my subscription?', answer: 'After payment, you\'ll receive login credentials via Telegram within 5 minutes.' },
-      { question: 'Can I use GPT-4 unlimited?', answer: 'Yes! You get full access to GPT-4 and all premium features.' },
-      { question: 'Is this a shared account?', answer: 'No, this is your personal ChatGPT Plus account with full access.' }
+      { question: 'Can I use GPT-4 unlimited?', answer: 'Yes! You get full access to ဂျီပီတီ-5.2 and all premium features.' },
+      { question: 'Is this a shared account?', answer: 'No, this is your personal ချက်ဂျီပီတီ+ with full access.' }
     ],
-    telegramLink: 't.me/AlphaTechBot?start=chatgpt-plus'
+    telegramLink: 't.me/AlphaTechBot?start=ချက်ဂျီပီတီပလပ်'
   },
   {
     id: '3',
-    slug: 'duolingo-plus',
-    title: 'Duolingo Plus',
+    slug: 'Duolinngo-plus',
+    title: 'Duolinngo Plus',
     shortDescription: 'Premium Duolingo subscription with unlimited lives, no ads, and offline access.',
     fullDescription: 'Learn any language with Duolingo Plus. Enjoy unlimited hearts, no ads, offline lessons, and progress tracking across all devices.',
     price: 8000,
