@@ -12,7 +12,15 @@ export interface Product {
   faq: { question: string; answer: string }[];
   telegramLink: string;
   badge?: string;
+  image: string;
 }
+
+import canvaProImg from '@/assets/products/canva-pro.png';
+import chatgptPlusImg from '@/assets/products/chatgpt-plus.png';
+import duolingoPlusImg from '@/assets/products/duolingo-plus.png';
+import netflixPremiumImg from '@/assets/products/netflix-premium.png';
+import skillsharePremiumImg from '@/assets/products/skillshare-premium.png';
+import spotifyPremiumImg from '@/assets/products/spotify-premium.png';
 
 export const products: Product[] = [
   {
@@ -24,6 +32,7 @@ export const products: Product[] = [
     price: 10000,
     category: 'bots',
     badge: 'Popular',
+    image: canvaProImg,
     features: [
       '100+ million premium templates',
       'Background remover tool',
@@ -60,6 +69,7 @@ export const products: Product[] = [
     fullDescription: 'Get full access to ChatGPT Plus with GPT-5.2, DALL-E image generation, advanced data analysis, and priority access during peak times.',
     price: 15000,
     category: 'scripts',
+    image: chatgptPlusImg,
     features: [
       'GPT-5.2 access',
       'DALL-E 3 image generation',
@@ -97,6 +107,7 @@ export const products: Product[] = [
     price: 8000,
     category: 'templates',
     badge: 'Best Seller',
+    image: duolingoPlusImg,
     features: [
       'Unlimited hearts',
       'No ads experience',
@@ -133,6 +144,7 @@ export const products: Product[] = [
     fullDescription: 'Stream unlimited movies and TV shows with Netflix Premium. Watch on 4 screens at once in 4K Ultra HD quality. Download and watch offline on any device.',
     price: 15000,
     category: 'toolkits',
+    image: netflixPremiumImg,
     features: [
       '4K Ultra HD streaming',
       'Watch on 4 screens',
@@ -169,6 +181,7 @@ export const products: Product[] = [
     fullDescription: 'Learn from industry experts with Skillshare Premium. Access 30,000+ classes in design, business, photography, video, and more. Download for offline viewing.',
     price: 10000,
     category: 'templates',
+    image: skillsharePremiumImg,
     features: [
       'Unlimited class access',
       '30,000+ creative classes',
@@ -206,6 +219,7 @@ export const products: Product[] = [
     price: 8000,
     category: 'saas',
     badge: 'Premium',
+    image: spotifyPremiumImg,
     features: [
       'Ad-free music streaming',
       'Unlimited skips',
