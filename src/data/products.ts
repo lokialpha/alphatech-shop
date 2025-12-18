@@ -38,7 +38,7 @@ export const products: Product[] = [
       'Internet connection'
     ],
     whatsIncluded: [
-      '1 Year Canva Pro subscription',
+      '1 Month Canva Pro subscription',
       'Access to all premium features',
       'Priority customer support',
       'Instant account activation',
