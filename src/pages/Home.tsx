@@ -59,7 +59,8 @@ export default function Home() {
 
             {/* Headline */}
             <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-              <span className="text-gradient">Ask</span>
+              Ask Faster.<br />
+              <span className="text-gradient">Ship Sooner.</span>
             </h1>
 
             {/* Subheadline */}
