@@ -239,7 +239,7 @@ export const products: Product[] = [
 export const categories = [
   { value: 'all', label: 'All Products' },
   { value: 'bots', label: 'Editing Subs' },
-  { value: 'scripts', label: 'Scripts' },
+  { value: 'scripts', label: 'Ai Subs' },
   { value: 'templates', label: 'Templates' },
   { value: 'toolkits', label: 'Toolkits' },
   { value: 'saas', label: 'SaaS' }
