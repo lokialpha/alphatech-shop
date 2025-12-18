@@ -77,6 +77,7 @@ export const products: Product[] = [
       '1 Month ChatGPT Plus subscription',
       'Access to all GPT-5.2 features',
       'DALL-E 3 image generation',
+      'Code X feature',
       'Instant account activation',
       '24hr support with admin'
     ],
