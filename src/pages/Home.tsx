@@ -65,7 +65,7 @@ export default function Home() {
 
             {/* Subheadline */}
             <p className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto mb-10">
-              Premium templates, scripts, and boilerplates for developers. Save hundreds of hours with production-ready code.
+              Premium accounts, Subscriptions, and many pro accounts for clients. Save money with our services.
             </p>
 
             {/* CTA Buttons */}
