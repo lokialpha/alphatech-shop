@@ -167,7 +167,7 @@ export const products: Product[] = [
     title: 'Skillshare Premium',
     shortDescription: 'Premium Skillshare subscription with unlimited access to 30,000+ creative classes.',
     fullDescription: 'Learn from industry experts with Skillshare Premium. Access 30,000+ classes in design, business, photography, video, and more. Download for offline viewing.',
-    price: 12000,
+    price: 10000,
     category: 'templates',
     features: [
       'Unlimited class access',
