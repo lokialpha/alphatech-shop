@@ -242,7 +242,7 @@ export const categories = [
   { value: 'scripts', label: 'Ai Subs' },
   { value: 'templates', label: 'Learning Subs' },
   { value: 'toolkits', label: 'Movies Subs' },
-  { value: 'saas', label: 'SaaS' }
+  { value: 'saas', label: 'Music Subs' }
 ];
 
 export const priceRanges = [
