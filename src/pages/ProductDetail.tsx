@@ -148,8 +148,17 @@ export default function ProductDetail() {
               <motion.div
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
-                className="sticky top-24"
+                className="sticky top-24 space-y-6"
               >
+                {/* Product Image */}
+                <div className="rounded-2xl overflow-hidden bg-card border border-border p-6">
+                  <img 
+                    src={product.image} 
+                    alt={product.title}
+                    className="w-full h-48 object-contain"
+                  />
+                </div>
+
                 <div className="p-8 rounded-2xl bg-gradient-card border border-border">
                   {/* Price */}
                   <div className="mb-6">

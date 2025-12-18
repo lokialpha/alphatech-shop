@@ -21,13 +21,22 @@ export function ProductCard({ product, index = 0 }: ProductCardProps) {
       {/* Glow effect on hover */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
       
-      <div className="relative p-6">
+      {/* Product Image */}
+      <div className="relative h-40 w-full overflow-hidden bg-muted/30">
+        <img 
+          src={product.image} 
+          alt={product.title}
+          className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300"
+        />
         {/* Badge */}
         {product.badge && (
-          <Badge className="absolute top-4 right-4 bg-primary/20 text-primary border-primary/30">
+          <Badge className="absolute top-3 right-3 bg-primary/20 text-primary border-primary/30">
             {product.badge}
           </Badge>
         )}
+      </div>
+
+      <div className="relative p-5">
 
         {/* Title & Description */}
         <h3 className="font-display font-bold text-lg text-foreground mb-2 group-hover:text-gradient transition-all duration-300">
