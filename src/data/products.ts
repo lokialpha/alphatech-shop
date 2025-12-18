@@ -127,39 +127,39 @@ export const products: Product[] = [
   },
   {
     id: '4',
-    slug: 'content-creator-toolkit',
-    title: 'Content Creator Toolkit',
-    shortDescription: 'All-in-one toolkit for content creators: templates, scripts, and automation.',
-    fullDescription: 'Streamline your content creation workflow. Includes social media templates, scheduling scripts, analytics dashboards, and AI-powered content helpers.',
-    price: 59,
+    slug: 'netflix-premium',
+    title: 'Netflix Premium',
+    shortDescription: 'Premium Netflix subscription with 4K Ultra HD, multiple screens, and all content.',
+    fullDescription: 'Stream unlimited movies and TV shows with Netflix Premium. Watch on 4 screens at once in 4K Ultra HD quality. Download and watch offline on any device.',
+    price: 15000,
     category: 'toolkits',
     features: [
-      'Social media templates (50+)',
-      'Content calendar system',
-      'Batch posting scripts',
-      'Analytics dashboard',
-      'AI content prompts',
-      'Thumbnail generator'
+      '4K Ultra HD streaming',
+      'Watch on 4 screens',
+      'Unlimited movies & shows',
+      'Download for offline',
+      'No ads experience',
+      'New releases weekly'
     ],
     requirements: [
-      'Canva or Figma (for templates)',
-      'Python 3.8+ (for scripts)',
-      'Social media accounts'
+      'Valid email address',
+      'Netflix app or browser',
+      'Internet connection'
     ],
     whatsIncluded: [
-      '50+ design templates',
-      'Automation scripts',
-      'Content calendar spreadsheet',
-      'AI prompt library',
-      'Video tutorial series',
-      'Private Discord access'
+      '1 Month Netflix Premium subscription',
+      '4K Ultra HD quality',
+      'Watch on 4 devices simultaneously',
+      'Download for offline viewing',
+      'Instant account activation',
+      '24hr support with admin'
     ],
     faq: [
-      { question: 'What platforms are supported?', answer: 'Twitter/X, Instagram, LinkedIn, TikTok, and YouTube. More coming soon!' },
-      { question: 'Do I need design skills?', answer: 'No! Templates are drag-and-drop in Canva. Just add your content.' },
-      { question: 'Is there a community?', answer: 'Yes! Get access to our private Discord with 500+ creators.' }
+      { question: 'How do I receive my subscription?', answer: 'After payment, you\'ll receive login credentials via Telegram within 5 minutes.' },
+      { question: 'Which devices are supported?', answer: 'Smart TVs, phones, tablets, laptops, gaming consoles - watch anywhere!' },
+      { question: 'Can I download for offline viewing?', answer: 'Yes! Download your favorite shows and movies to watch offline.' }
     ],
-    telegramLink: 't.me/AlphaTechBot?start=content-creator-toolkit'
+    telegramLink: 't.me/AlphaTechBot?start=netflix-premium'
   },
   {
     id: '5',
