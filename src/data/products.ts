@@ -163,39 +163,39 @@ export const products: Product[] = [
   },
   {
     id: '5',
-    slug: 'website-templates',
-    title: 'Website Templates',
-    shortDescription: 'Modern, responsive website templates built with React and Tailwind CSS.',
-    fullDescription: 'Launch stunning websites fast. Our templates are built with React, Tailwind CSS, and include dark mode, animations, and optimized for Core Web Vitals.',
-    price: 69,
+    slug: 'skillshare-premium',
+    title: 'Skillshare Premium',
+    shortDescription: 'Premium Skillshare subscription with unlimited access to 30,000+ creative classes.',
+    fullDescription: 'Learn from industry experts with Skillshare Premium. Access 30,000+ classes in design, business, photography, video, and more. Download for offline viewing.',
+    price: 12000,
     category: 'templates',
     features: [
-      '10 unique templates',
-      'React + Tailwind CSS',
-      'Dark/light mode',
-      'Framer Motion animations',
-      'SEO optimized',
-      'Mobile-first design'
+      'Unlimited class access',
+      '30,000+ creative classes',
+      'Offline viewing',
+      'No ads experience',
+      'Download lessons',
+      'Skill tracks & paths'
     ],
     requirements: [
-      'Node.js 16+',
-      'npm or yarn',
-      'Basic React knowledge'
+      'Valid email address',
+      'Skillshare app or browser',
+      'Internet connection'
     ],
     whatsIncluded: [
-      '10 complete templates',
-      'Component library',
-      'Documentation',
-      'Figma source files',
-      'Free updates',
-      '30 days support'
+      '1 Month Skillshare Premium subscription',
+      'Access to all premium classes',
+      'Offline download feature',
+      'Ad-free learning experience',
+      'Instant account activation',
+      '24hr support with admin'
     ],
     faq: [
-      { question: 'Can I use these for client projects?', answer: 'Yes! The license allows unlimited personal and commercial use.' },
-      { question: 'What\'s the tech stack?', answer: 'React, TypeScript, Tailwind CSS, and Framer Motion. Vite for blazing-fast development.' },
-      { question: 'Are Figma files included?', answer: 'Yes, you get the complete Figma source files for customization.' }
+      { question: 'How do I receive my subscription?', answer: 'After payment, you\'ll receive login credentials via Telegram within 5 minutes.' },
+      { question: 'What topics are available?', answer: 'Design, illustration, photography, video, freelancing, marketing, business, and more.' },
+      { question: 'Can I download classes for offline?', answer: 'Yes! Premium allows you to download classes and watch offline on mobile.' }
     ],
-    telegramLink: 't.me/AlphaTechBot?start=website-templates'
+    telegramLink: 't.me/AlphaTechBot?start=skillshare-premium'
   },
   {
     id: '6',
