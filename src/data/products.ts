@@ -19,37 +19,37 @@ export const products: Product[] = [
     id: '1',
     slug: 'canva-pro',
     title: 'Canva Pro',
-    shortDescription: 'Production-ready bot templates with modular architecture and deployment scripts.',
-    fullDescription: 'Launch your Telegram bot in minutes with our battle-tested templates. Includes command handlers, inline keyboards, payment integration, and database connections.',
-    price: 49,
+    shortDescription: 'Premium Canva subscription with unlimited access to all pro features and templates.',
+    fullDescription: 'Get full access to Canva Pro with unlimited premium templates, brand kits, background remover, magic resize, and 100GB cloud storage. Perfect for creators and businesses.',
+    price: 12,
     category: 'bots',
     badge: 'Popular',
     features: [
-      'Multiple bot architectures (polling & webhook)',
-      'Built-in payment processing',
-      'User management & analytics',
-      'Rate limiting & spam protection',
-      'Multi-language support',
-      'Docker deployment ready'
+      '100+ million premium templates',
+      'Background remover tool',
+      'Magic resize for all formats',
+      'Brand kit with custom fonts',
+      '100GB cloud storage',
+      'Schedule social media posts'
     ],
     requirements: [
-      'Node.js 18+ or Python 3.9+',
-      'Telegram Bot Token',
-      'Basic programming knowledge'
+      'Valid email address',
+      'Any device with browser',
+      'Internet connection'
     ],
     whatsIncluded: [
-      '5 complete bot templates',
-      'Step-by-step documentation',
-      'Video tutorials (2+ hours)',
-      '30 days email support',
-      'Future updates included'
+      '1 Year Canva Pro subscription',
+      'Access to all premium features',
+      'Priority customer support',
+      'Instant account activation',
+      'Renewal reminder'
     ],
     faq: [
-      { question: 'What programming languages are supported?', answer: 'Templates are available in both Node.js (TypeScript) and Python. Choose the one that fits your stack.' },
-      { question: 'Can I use this for commercial projects?', answer: 'Yes! The license allows unlimited commercial use. Build as many bots as you want.' },
-      { question: 'Do you offer refunds?', answer: 'Yes, we offer a 14-day money-back guarantee if the product doesn\'t meet your expectations.' }
+      { question: 'How do I receive my subscription?', answer: 'After payment, you\'ll receive login credentials via Telegram within 5 minutes.' },
+      { question: 'Is this a personal or team account?', answer: 'This is a personal Canva Pro account with full premium features.' },
+      { question: 'Can I use this for commercial projects?', answer: 'Yes! Canva Pro license allows commercial use of all designs.' }
     ],
-    telegramLink: 't.me/AlphaTechBot?start=telegram-bot-templates'
+    telegramLink: 't.me/AlphaTechBot?start=canva-pro'
   },
   {
     id: '2',
