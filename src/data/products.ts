@@ -61,7 +61,7 @@ export const products: Product[] = [
     price: 25000,
     category: 'scripts',
     features: [
-      'GPT-4 & GPT-4o access',
+      'GPT-5.2 access',
       'DALL-E 3 image generation',
       'Advanced Data Analysis',
       'Custom GPTs creation',
