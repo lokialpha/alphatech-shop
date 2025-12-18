@@ -17,8 +17,8 @@ export interface Product {
 export const products: Product[] = [
   {
     id: '1',
-    slug: 'telegram-bot-templates',
-    title: 'Telegram Bot Templates',
+    slug: 'canva-pro',
+    title: 'Canva Pro',
     shortDescription: 'Production-ready bot templates with modular architecture and deployment scripts.',
     fullDescription: 'Launch your Telegram bot in minutes with our battle-tested templates. Includes command handlers, inline keyboards, payment integration, and database connections.',
     price: 49,
