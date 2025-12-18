@@ -40,7 +40,7 @@ export const products: Product[] = [
     whatsIncluded: [
       '1 Month Canva Pro subscription',
       'Access to all premium features',
-      'Canva AI (Magic Write, Text to Image)',
+      'Canva AI (Magic Write, Text to Image, Text to Video)',
       'Priority customer support',
       'Instant account activation',
       'Renewal reminder'
