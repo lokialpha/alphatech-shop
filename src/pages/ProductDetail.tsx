@@ -190,15 +190,15 @@ export default function ProductDetail() {
                   <div className="space-y-3 pt-6 border-t border-border">
                     <div className="flex items-center gap-3 text-sm">
                       <Check className="w-4 h-4 text-primary" />
-                      <span className="text-muted-foreground">14-day money-back guarantee</span>
+                      <span className="text-muted-foreground">Use my discount code for extra savings</span>
                     </div>
                     <div className="flex items-center gap-3 text-sm">
                       <Check className="w-4 h-4 text-primary" />
-                      <span className="text-muted-foreground">Lifetime access & updates</span>
+                      <span className="text-muted-foreground">Warranty included with expiry date</span>
                     </div>
                     <div className="flex items-center gap-3 text-sm">
                       <Check className="w-4 h-4 text-primary" />
-                      <span className="text-muted-foreground">Email support included</span>
+                      <span className="text-muted-foreground">24hr support with admin</span>
                     </div>
                   </div>
                 </div>
