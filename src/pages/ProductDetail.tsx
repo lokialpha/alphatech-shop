@@ -153,6 +153,14 @@ export default function ProductDetail() {
                 <div className="p-8 rounded-2xl bg-gradient-card border border-border">
                   {/* Price */}
                   <div className="mb-6">
+                    <div className="flex items-center gap-2 mb-1">
+                      <span className="text-sm line-through text-muted-foreground">
+                        {(product.price + 5000).toLocaleString()} MMK
+                      </span>
+                      <Badge className="bg-green-500/20 text-green-400 border-green-500/30">
+                        5,000 MMK OFF
+                      </Badge>
+                    </div>
                     <div className="flex items-baseline gap-2">
                       <span className="font-display font-bold text-4xl text-foreground">
                         {product.price.toLocaleString()}
