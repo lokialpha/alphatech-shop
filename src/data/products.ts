@@ -238,7 +238,7 @@ export const products: Product[] = [
 
 export const categories = [
   { value: 'all', label: 'All Products' },
-  { value: 'bots', label: 'Bots' },
+  { value: 'bots', label: 'Editing Subs' },
   { value: 'scripts', label: 'Scripts' },
   { value: 'templates', label: 'Templates' },
   { value: 'toolkits', label: 'Toolkits' },
