@@ -54,38 +54,38 @@ export const products: Product[] = [
   },
   {
     id: '2',
-    slug: 'automation-scripts-python',
-    title: 'Automation Scripts (Python)',
-    shortDescription: 'Save hours daily with 20+ Python automation scripts for common tasks.',
-    fullDescription: 'Automate repetitive tasks with our curated collection of Python scripts. From file management to web scraping, API integrations to data processing.',
-    price: 39,
+    slug: 'chatgpt-plus',
+    title: 'ChatGPT Plus',
+    shortDescription: 'Premium ChatGPT subscription with GPT-4, faster responses, and priority access.',
+    fullDescription: 'Get full access to ChatGPT Plus with GPT-4, DALL-E image generation, advanced data analysis, and priority access during peak times.',
+    price: 25000,
     category: 'scripts',
     features: [
-      'File & folder automation',
-      'Web scraping templates',
-      'API integration examples',
-      'Data processing pipelines',
-      'Email automation',
-      'Schedule & cron ready'
+      'GPT-4 & GPT-4o access',
+      'DALL-E 3 image generation',
+      'Advanced Data Analysis',
+      'Custom GPTs creation',
+      'Priority access during peak times',
+      'Faster response speed'
     ],
     requirements: [
-      'Python 3.8+',
-      'pip package manager',
-      'Basic Python knowledge'
+      'Valid email address',
+      'Any device with browser',
+      'Internet connection'
     ],
     whatsIncluded: [
-      '20+ automation scripts',
-      'Detailed documentation',
-      'Requirements.txt for each script',
-      'Usage examples',
-      'Lifetime updates'
+      '1 Month ChatGPT Plus subscription',
+      'Access to all GPT-4 features',
+      'DALL-E 3 image generation',
+      'Instant account activation',
+      '24hr support with admin'
     ],
     faq: [
-      { question: 'Are these scripts beginner-friendly?', answer: 'Yes! Each script includes comments and documentation. Perfect for learning automation.' },
-      { question: 'Can I modify the scripts?', answer: 'Absolutely. You get the full source code and can modify as needed.' },
-      { question: 'What if I need help?', answer: 'We provide 14 days of email support to help you get started.' }
+      { question: 'How do I receive my subscription?', answer: 'After payment, you\'ll receive login credentials via Telegram within 5 minutes.' },
+      { question: 'Can I use GPT-4 unlimited?', answer: 'Yes! You get full access to GPT-4 and all premium features.' },
+      { question: 'Is this a shared account?', answer: 'No, this is your personal ChatGPT Plus account with full access.' }
     ],
-    telegramLink: 't.me/AlphaTechBot?start=automation-scripts-python'
+    telegramLink: 't.me/AlphaTechBot?start=chatgpt-plus'
   },
   {
     id: '3',
