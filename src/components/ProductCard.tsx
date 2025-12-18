@@ -22,11 +22,11 @@ export function ProductCard({ product, index = 0 }: ProductCardProps) {
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
       
       {/* Product Image */}
-      <div className="relative h-40 w-full overflow-hidden bg-muted/30">
+      <div className="relative h-36 w-full overflow-hidden bg-muted/20 flex items-center justify-center">
         <img 
           src={product.image} 
           alt={product.title}
-          className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300"
+          className="max-w-[80%] max-h-[80%] object-contain group-hover:scale-105 transition-transform duration-300"
         />
         {/* Badge */}
         {product.badge && (
