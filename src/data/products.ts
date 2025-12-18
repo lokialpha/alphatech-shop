@@ -21,7 +21,7 @@ export const products: Product[] = [
     title: 'Canva Pro',
     shortDescription: 'Premium Canva subscription with unlimited access to all pro features and templates.',
     fullDescription: 'Get full access to Canva Pro with unlimited premium templates, brand kits, background remover, magic resize, and 100GB cloud storage. Perfect for creators and businesses.',
-    price: 10000,
+    price: 15000,
     category: 'bots',
     badge: 'Popular',
     features: [
