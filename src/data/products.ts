@@ -240,7 +240,7 @@ export const categories = [
   { value: 'all', label: 'All Products' },
   { value: 'bots', label: 'Editing Subs' },
   { value: 'scripts', label: 'Ai Subs' },
-  { value: 'templates', label: 'Templates' },
+  { value: 'templates', label: 'Learning Subs' },
   { value: 'toolkits', label: 'Toolkits' },
   { value: 'saas', label: 'SaaS' }
 ];
