@@ -90,40 +90,40 @@ export const products: Product[] = [
   },
   {
     id: '3',
-    slug: 'nodejs-api-starter',
-    title: 'Node.js API Starter',
-    shortDescription: 'Enterprise-grade API boilerplate with authentication, validation, and more.',
-    fullDescription: 'Skip the boilerplate and start building features. Includes JWT auth, role-based access, request validation, rate limiting, and comprehensive error handling.',
-    price: 79,
+    slug: 'duolingo-plus',
+    title: 'Duolingo Plus',
+    shortDescription: 'Premium Duolingo subscription with unlimited lives, no ads, and offline access.',
+    fullDescription: 'Learn any language with Duolingo Plus. Enjoy unlimited hearts, no ads, offline lessons, and progress tracking across all devices.',
+    price: 8000,
     category: 'templates',
     badge: 'Best Seller',
     features: [
-      'JWT & OAuth2 authentication',
-      'Role-based access control',
-      'Request validation (Zod)',
-      'Rate limiting & security',
-      'PostgreSQL + Prisma ORM',
-      'Docker & CI/CD ready'
+      'Unlimited hearts',
+      'No ads experience',
+      'Offline lesson access',
+      'Unlimited skill tests',
+      'Progress tracking',
+      'Mastery quizzes'
     ],
     requirements: [
-      'Node.js 18+',
-      'PostgreSQL database',
-      'Docker (optional)'
+      'Valid email address',
+      'Duolingo app or browser',
+      'Internet connection'
     ],
     whatsIncluded: [
-      'Complete API boilerplate',
-      'Database migrations',
-      'API documentation (Swagger)',
-      'Testing setup (Jest)',
-      'Deployment guides',
-      '60 days support'
+      '1 Month Duolingo Plus subscription',
+      'Access to all premium features',
+      'Unlimited hearts & lives',
+      'Ad-free learning experience',
+      'Instant account activation',
+      '24hr support with admin'
     ],
     faq: [
-      { question: 'Can I use a different database?', answer: 'The template uses Prisma ORM, so you can easily switch to MySQL, SQLite, or MongoDB.' },
-      { question: 'Is this suitable for production?', answer: 'Yes! It\'s built with security and scalability in mind. Used by companies processing millions of requests.' },
-      { question: 'Do updates cost extra?', answer: 'No, all future updates are included in your purchase.' }
+      { question: 'How do I receive my subscription?', answer: 'After payment, you\'ll receive login credentials via Telegram within 5 minutes.' },
+      { question: 'Which languages can I learn?', answer: 'You can learn 40+ languages including Spanish, French, German, Japanese, Korean, and more.' },
+      { question: 'Can I use on multiple devices?', answer: 'Yes! Your progress syncs across all devices - phone, tablet, and computer.' }
     ],
-    telegramLink: 't.me/AlphaTechBot?start=nodejs-api-starter'
+    telegramLink: 't.me/AlphaTechBot?start=duolingo-plus'
   },
   {
     id: '4',
