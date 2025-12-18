@@ -247,9 +247,9 @@ export const categories = [
 
 export const priceRanges = [
   { value: 'all', label: 'All Prices' },
-  { value: '0-15000', label: 'Under 15,000 MMK' },
-  { value: '15000-20000', label: '15,000 - 20,000 MMK' },
-  { value: '20000+', label: '20,000+ MMK' }
+  { value: '0-9000', label: 'Under 9,000 MMK' },
+  { value: '9000-12000', label: '9,000 - 12,000 MMK' },
+  { value: '12000+', label: '12,000+ MMK' }
 ];
 
 export function getProductBySlug(slug: string): Product | undefined {
@@ -264,12 +264,12 @@ export function filterProducts(
     const categoryMatch = category === 'all' || product.category === category;
     
     let priceMatch = true;
-    if (priceRange === '0-15000') {
-      priceMatch = product.price < 15000;
-    } else if (priceRange === '15000-20000') {
-      priceMatch = product.price >= 15000 && product.price <= 20000;
-    } else if (priceRange === '20000+') {
-      priceMatch = product.price > 20000;
+    if (priceRange === '0-9000') {
+      priceMatch = product.price < 9000;
+    } else if (priceRange === '9000-12000') {
+      priceMatch = product.price >= 9000 && product.price <= 12000;
+    } else if (priceRange === '12000+') {
+      priceMatch = product.price > 12000;
     }
     
     return categoryMatch && priceMatch;
