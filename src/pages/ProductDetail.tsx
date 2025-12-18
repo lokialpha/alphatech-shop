@@ -155,9 +155,9 @@ export default function ProductDetail() {
                   <div className="mb-6">
                     <div className="flex items-baseline gap-2">
                       <span className="font-display font-bold text-4xl text-foreground">
-                        ${product.price}
+                        {product.price.toLocaleString()}
                       </span>
-                      <span className="text-muted-foreground">USD</span>
+                      <span className="text-muted-foreground">MMK</span>
                     </div>
                     <span className="text-sm text-primary">One-time payment</span>
                   </div>

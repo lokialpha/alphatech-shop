@@ -50,9 +50,9 @@ export function ProductCard({ product, index = 0 }: ProductCardProps) {
         {/* Price */}
         <div className="flex items-baseline gap-2 mb-4">
           <span className="font-display font-bold text-2xl text-foreground">
-            ${product.price}
+            {product.price.toLocaleString()}
           </span>
-          <span className="text-sm text-muted-foreground">one-time</span>
+          <span className="text-sm text-muted-foreground">MMK</span>
         </div>
 
         {/* Actions */}
