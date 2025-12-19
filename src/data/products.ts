@@ -25,6 +25,8 @@ import DiMoviesPlusImg from '@/assets/products/Di-Movies-plus.png';
 import SSLearningPremiumImg from '@/assets/products/SS-Learning-premium.png';
 import SpotiPremiumImg from '@/assets/products/Spoti-premium.png';
 
+
+// Product Data
 export const products: Product[] = [
   {
     id: '1',
