@@ -23,7 +23,7 @@ import DuoLearningPlusImg from '@/assets/products/DuoLearning-plus.png';
 import NetMoviesPremiumImg from '@/assets/products/Net-Movies-premium.png';
 import DiMoviesPlusImg from '@/assets/products/Di-Movies-plus.png';
 import SSLearningPremiumImg from '@/assets/products/SS-Learning-premium.png';
-import SpotiPremiumImg from '@/assets/products/Spoti-premium.png';
+import SpotiPremiumImg from '@/assets/products/Spoti.png';
 
 
 // Product Data
