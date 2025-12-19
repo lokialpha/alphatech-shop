@@ -1,6 +1,6 @@
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowLeft, MessageCircle, Check, ChevronDown } from 'lucide-react';
+import { ArrowLeft, Ban, MessageCircle, Check, ChevronDown } from 'lucide-react';
 import { Layout } from '@/components/layout/Layout';
 import { SEO } from '@/components/SEO';
 import { Button } from '@/components/ui/button';
@@ -15,6 +15,9 @@ export default function ProductDetail() {
   if (!product) {
     return <Navigate to="/products" replace />;
   }
+
+  const isOutOfStock = product.stock === 'out-of-stock';
+  const telegramHref = `https://${product.telegramLink}`;
 
   return (
     <Layout>
@@ -44,11 +47,20 @@ export default function ProductDetail() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
               >
-                {/* Badge */}
-                {product.badge && (
-                  <Badge className="mb-4 bg-primary/20 text-primary border-primary/30">
-                    {product.badge}
-                  </Badge>
+                {/* Badges */}
+                {(product.badge || isOutOfStock) && (
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {product.badge && (
+                      <Badge className="bg-primary/20 text-primary border-primary/30">
+                        {product.badge}
+                      </Badge>
+                    )}
+                    {isOutOfStock && (
+                      <Badge className="bg-destructive/10 text-destructive border-destructive/30">
+                        Out of Stock
+                      </Badge>
+                    )}
+                  </div>
                 )}
 
                 {/* Title */}
@@ -163,12 +175,20 @@ export default function ProductDetail() {
                   {/* Price */}
                   <div className="mb-6">
                     <div className="flex items-center gap-2 mb-1">
-                      <span className="text-sm line-through text-muted-foreground">
-                        {(product.price + 5000).toLocaleString()} MMK
-                      </span>
-                      <Badge className="bg-green-500/20 text-green-400 border-green-500/30">
-                        5,000 MMK OFF
-                      </Badge>
+                      {!isOutOfStock ? (
+                        <>
+                          <span className="text-sm line-through text-muted-foreground">
+                            {(product.price + 5000).toLocaleString()} MMK
+                          </span>
+                          <Badge className="bg-green-500/20 text-green-400 border-green-500/30">
+                            5,000 MMK OFF
+                          </Badge>
+                        </>
+                      ) : (
+                        <Badge className="bg-destructive/10 text-destructive border-destructive/30">
+                          Out of Stock
+                        </Badge>
+                      )}
                     </div>
                     <div className="flex items-baseline gap-2">
                       <span className="font-display font-bold text-4xl text-foreground">
@@ -176,23 +196,38 @@ export default function ProductDetail() {
                       </span>
                       <span className="text-muted-foreground">MMK</span>
                     </div>
-                    <span className="text-sm text-primary">One-time payment</span>
+                    <span className={`text-sm ${isOutOfStock ? 'text-muted-foreground' : 'text-primary'}`}>
+                      {isOutOfStock ? 'Currently unavailable' : 'One-time payment'}
+                    </span>
                   </div>
 
                   {/* CTA */}
-                  <Button variant="telegram" size="lg" className="w-full mb-4" asChild>
-                    <a
-                      href={`https://${product.telegramLink}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <MessageCircle className="w-5 h-5" />
-                      Buy on Telegram
-                    </a>
+                  <Button
+                    variant={isOutOfStock ? 'outline' : 'telegram'}
+                    size="lg"
+                    className="w-full mb-4"
+                    asChild={!isOutOfStock}
+                    disabled={isOutOfStock}
+                  >
+                    {isOutOfStock ? (
+                      <>
+                        <Ban className="w-5 h-5" />
+                        Out of Stock
+                      </>
+                    ) : (
+                      <a
+                        href={telegramHref}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <MessageCircle className="w-5 h-5" />
+                        Buy on Telegram
+                      </a>
+                    )}
                   </Button>
 
                   <p className="text-xs text-muted-foreground text-center mb-6">
-                    Secure payment via Telegram Bot
+                    {isOutOfStock ? 'We will restock soon. Please check back later.' : 'Secure payment via Telegram Bot'}
                   </p>
 
                   {/* Guarantees */}

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowRight, MessageCircle } from 'lucide-react';
+import { ArrowRight, Ban, MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import type { Product } from '@/data/products';
@@ -11,6 +11,9 @@ interface ProductCardProps {
 }
 
 export function ProductCard({ product, index = 0 }: ProductCardProps) {
+  const isOutOfStock = product.stock === 'out-of-stock';
+  const telegramHref = `https://${product.telegramLink}`;
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -18,11 +21,22 @@ export function ProductCard({ product, index = 0 }: ProductCardProps) {
       transition={{ delay: index * 0.1, duration: 0.4 }}
       className="group relative rounded-xl bg-gradient-card border border-border overflow-hidden hover:border-primary/50 transition-all duration-300 hover:shadow-elevated"
     >
+      {isOutOfStock && (
+        <div className="absolute inset-0 z-10 bg-background/80 backdrop-blur-[2px] pointer-events-none" />
+      )}
+
       {/* Glow effect on hover */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
       
       {/* Product Image */}
       <div className="relative h-36 w-full overflow-hidden bg-muted/20 flex items-center justify-center">
+        {isOutOfStock && (
+          <div className="absolute inset-0 z-20 flex items-center justify-center">
+            <Badge className="bg-destructive/10 text-destructive border-destructive/30 shadow-sm">
+              Out of Stock
+            </Badge>
+          </div>
+        )}
         <img 
           src={product.image} 
           alt={product.title}
@@ -66,15 +80,28 @@ export function ProductCard({ product, index = 0 }: ProductCardProps) {
 
         {/* Actions */}
         <div className="flex gap-3">
-          <Button variant="telegram" size="sm" className="flex-1" asChild>
-            <a 
-              href={`https://${product.telegramLink}`} 
-              target="_blank" 
-              rel="noopener noreferrer"
-            >
-              <MessageCircle className="w-4 h-4" />
-              Buy on Telegram
-            </a>
+          <Button
+            variant={isOutOfStock ? 'outline' : 'telegram'}
+            size="sm"
+            className="flex-1"
+            asChild={!isOutOfStock}
+            disabled={isOutOfStock}
+          >
+            {isOutOfStock ? (
+              <>
+                <Ban className="w-4 h-4" />
+                Out of Stock
+              </>
+            ) : (
+              <a 
+                href={telegramHref} 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <MessageCircle className="w-4 h-4" />
+                Buy on Telegram
+              </a>
+            )}
           </Button>
           <Button variant="outline" size="sm" asChild>
             <Link to={`/product/${product.slug}`}>
