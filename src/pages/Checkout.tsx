@@ -149,7 +149,7 @@ export default function Checkout() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="hero" size="lg" asChild>
-                <a href="https://t.me/AlphaTechBot" target="_blank" rel="noopener noreferrer">
+                <a href="https://t.me/lokialpha" target="_blank" rel="noopener noreferrer">
                   <MessageCircle className="w-5 h-5" />
                   Open Telegram Bot
                 </a>

@@ -21,7 +21,7 @@ const footerLinks = {
 };
 
 const socialLinks = [
-  { icon: MessageCircle, href: 'https://t.me/AlphaTechBot', label: 'Telegram' },
+  { icon: MessageCircle, href: 'https://t.me/lokialpha', label: 'Telegram' },
   { icon: Twitter, href: 'https://twitter.com/alphatech', label: 'Twitter' },
   { icon: Github, href: 'https://github.com/alphatech', label: 'GitHub' },
   { icon: Mail, href: 'mailto:support@lokialpha.site', label: 'Email' },

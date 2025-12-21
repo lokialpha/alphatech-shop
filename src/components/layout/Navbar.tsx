@@ -49,7 +49,7 @@ export function Navbar() {
           {/* CTA Button */}
           <div className="hidden md:block">
             <Button variant="hero" size="sm" asChild>
-              <a href="https://t.me/AlphaTechBot" target="_blank" rel="noopener noreferrer">
+              <a href="https://t.me/lokialpha" target="_blank" rel="noopener noreferrer">
                 Buy via Telegram
               </a>
             </Button>
@@ -92,7 +92,7 @@ export function Navbar() {
               ))}
               <div className="pt-2">
                 <Button variant="hero" className="w-full" asChild>
-                  <a href="https://t.me/AlphaTechBot" target="_blank" rel="noopener noreferrer">
+                  <a href="https://t.me/lokialpha" target="_blank" rel="noopener noreferrer">
                     Buy via Telegram
                   </a>
                 </Button>

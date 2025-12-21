@@ -145,7 +145,7 @@ All products come with a 14-day money-back guarantee. If you're not satisfied wi
 
 ## How to Request a Refund
 
-1. Contact us via Telegram (@AlphaTechSupport) or email (support@lokialpha.site)
+1. Contact us via Telegram (t.me/lokialpha) or email (support@lokialpha.site)
 2. Provide your order ID and Telegram username
 3. Briefly explain why you're requesting a refund
 
@@ -180,7 +180,7 @@ In some cases, we may offer a partial refund instead of a full refund:
 ## Contact
 
 For refund requests or questions, contact:
-- Telegram: @AlphaTechSupport
+- Telegram: t.me/lokialpha
 - Email: support@lokialpha.site
     `,
   },

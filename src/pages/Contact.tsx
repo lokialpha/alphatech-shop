@@ -9,8 +9,8 @@ const contactMethods = [
     icon: MessageCircle,
     title: 'Telegram',
     description: 'Fastest way to reach us',
-    value: '@AlphaTechSupport',
-    href: 'https://t.me/AlphaTechSupport',
+    value: 't.me/lokialpha',
+    href: 'https://t.me/lokialpha',
     primary: true,
   },
   {

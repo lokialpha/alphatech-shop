@@ -65,7 +65,7 @@ export const products: Product[] = [
       { question: 'Is this a personal or team account?', answer: 'This is a personal KanBar Pro account with full premium features.' },
       { question: 'Can I use this for commercial projects?', answer: 'Yes! KanBar Pro license allows commercial use of all designs.' }
     ],
-    telegramLink: 't.me/AlphaTechBot?start=KanBar-pro'
+    telegramLink: 't.me/lokialpha'
   },
   {
     id: '2',
@@ -102,7 +102,7 @@ export const products: Product[] = [
       { question: 'Can I use ဂျီပီတီ-5.2 unlimited?', answer: 'Yes! You get full access to ဂျီပီတီ-5.2 and all premium features.' },
       { question: 'Is this a shared account?', answer: 'No, this is your personal ChatGyi Plus account with full access.' }
     ],
-    telegramLink: 't.me/AlphaTechBot?start=ChatGyi-plus'
+    telegramLink: 't.me/lokialpha'
   },
   {
     id: '8',
@@ -140,7 +140,7 @@ export const products: Product[] = [
       { question: 'Do I get browsing?', answer: 'Yes, browsing is included for fresh, up-to-date answers.' },
       { question: 'Can I upgrade later?', answer: 'You can upgrade to ChatGyi Plus anytime by contacting support.' }
     ],
-    telegramLink: 't.me/AlphaTechBot?start=ChatGyi-go'
+    telegramLink: 't.me/lokialpha'
   },
   {
     id: '3',
@@ -178,7 +178,7 @@ export const products: Product[] = [
       { question: 'Which languages can I learn?', answer: 'You can learn 40+ languages including Spanish, French, German, Japanese, Korean, and more.' },
       { question: 'Can I use on multiple devices?', answer: 'Yes! Your progress syncs across all devices - phone, tablet, and computer.' }
     ],
-    telegramLink: 't.me/AlphaTechBot?start=DuoLearning-plus'
+    telegramLink: 't.me/lokialpha'
   },
   {
     id: '4',
@@ -216,7 +216,7 @@ export const products: Product[] = [
       { question: 'Which devices are supported?', answer: 'Smart TVs, phones, tablets, laptops, gaming consoles - watch anywhere!' },
       { question: 'Can I download for offline viewing?', answer: 'Yes! Download your favorite shows and movies to watch offline.' }
     ],
-    telegramLink: 't.me/AlphaTechBot?start=Net-Movies-premium'
+    telegramLink: 't.me/lokialpha'
   },
   {
     id: '5',
@@ -253,7 +253,7 @@ export const products: Product[] = [
       { question: 'What topics are available?', answer: 'Design, illustration, photography, video, freelancing, marketing, business, and more.' },
       { question: 'Can I download classes for offline?', answer: 'Yes! Premium allows you to download classes and watch offline on mobile.' }
     ],
-    telegramLink: 't.me/AlphaTechBot?start=SS-Learning-premium'
+    telegramLink: 't.me/lokialpha'
   },
   {
     id: '6',
@@ -292,7 +292,7 @@ export const products: Product[] = [
       { question: 'Can I download songs for offline?', answer: 'Yes! Download unlimited songs and playlists to listen offline.' },
       { question: 'Which devices are supported?', answer: 'Phone, tablet, computer, smart speakers, gaming consoles, and car audio systems.' }
     ],
-    telegramLink: 't.me/AlphaTechBot?start=Spoti-premium'
+    telegramLink: 't.me/lokialpha'
   },
   {
     id: '7',
@@ -330,7 +330,7 @@ export const products: Product[] = [
       { question: 'Does it support offline downloads?', answer: 'Yes, download movies and episodes to watch without internet.' },
       { question: 'How many devices can stream?', answer: 'Up to 4 devices can stream at the same time on one account.' }
     ],
-    telegramLink: 't.me/AlphaTechBot?start=Di-Movies-plus'
+    telegramLink: 't.me/lokialpha'
   }
 ];
 

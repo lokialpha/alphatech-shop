@@ -71,7 +71,7 @@ export default function Home() {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="hero" size="xl" asChild>
-                <a href="https://t.me/AlphaTechBot" target="_blank" rel="noopener noreferrer">
+                <a href="https://t.me/lokialpha" target="_blank" rel="noopener noreferrer">
                   <MessageCircle className="w-5 h-5" />
                   Buy via Telegram
                 </a>
@@ -213,7 +213,7 @@ export default function Home() {
                 Join 500+ developers who saved hundreds of hours with our products.
               </p>
               <Button variant="hero" size="xl" asChild>
-                <a href="https://t.me/AlphaTechBot" target="_blank" rel="noopener noreferrer">
+                <a href="https://t.me/lokialpha" target="_blank" rel="noopener noreferrer">
                   <MessageCircle className="w-5 h-5" />
                   Start Shopping on Telegram
                 </a>
