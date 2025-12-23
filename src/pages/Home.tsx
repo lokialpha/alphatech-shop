@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Zap, Shield, Clock, Code, ArrowRight, CheckCircle, MessageCircle, Star, Users } from 'lucide-react';
+import { Zap, Search, Clock, Code, ArrowRight, CheckCircle, MessageCircle, Star, Users } from 'lucide-react';
 import { Layout } from '@/components/layout/Layout';
 import { SEO } from '@/components/SEO';
 import { Button } from '@/components/ui/button';
@@ -19,9 +19,9 @@ const highlights = [
     description: 'Skip the boilerplate and start building features that matter.',
   },
   {
-    icon: Shield,
-    title: 'Lifetime Access',
-    description: 'Pay once, get updates forever. No subscriptions.',
+    icon: Search,
+    title: 'Free to Scroll',
+    description: 'Browse prices and features freely.  Check plans anytime and buy via Telegram.',
   },
 ];
 
@@ -207,10 +207,10 @@ export default function Home() {
             
             <div className="relative z-10">
               <h2 className="font-display text-3xl md:text-5xl font-bold mb-6">
-                Ready to Build <span className="text-gradient">Faster</span>?
+                Ready to buy <span className="text-gradient">faster</span>?
               </h2>
               <p className="text-muted-foreground text-lg max-w-xl mx-auto mb-10">
-                Join 500+ developers who saved hundreds of hours with our products.
+                Join 500+ clients who saved hundreds of hours and money with our products.
               </p>
               <Button variant="hero" size="xl" asChild>
                 <a href="https://t.me/lokialpha" target="_blank" rel="noopener noreferrer">

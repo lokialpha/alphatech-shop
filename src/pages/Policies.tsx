@@ -139,10 +139,6 @@ For privacy-related questions, contact us at support@lokialpha.site.
 
 We want you to be completely satisfied with your purchase. If you're not happy, we're here to help.
 
-## 14-Day Money-Back Guarantee
-
-All products come with a 14-day money-back guarantee. If you're not satisfied with your purchase for any reason, you can request a full refund within 14 days of purchase.
-
 ## How to Request a Refund
 
 1. Contact us via Telegram (t.me/lokialpha) or email (support@lokialpha.site)
@@ -167,7 +163,7 @@ Once your refund is processed:
 ## Exceptions
 
 Refunds may not be available if:
-- More than 14 days have passed since purchase
+- More than 20 days have passed since purchase
 - You've violated our Terms of Service
 - You've requested multiple refunds (pattern of abuse)
 

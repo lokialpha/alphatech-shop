@@ -26,15 +26,11 @@ const contactMethods = [
 const faqs = [
   {
     question: 'What payment methods do you accept?',
-    answer: 'We accept credit/debit cards, PayPal, and cryptocurrency through our Telegram bot. All payments are processed securely.',
+    answer: 'We accept Kpay, Wave, and cryptocurrency through our Telegram. All payments are processed securely.',
   },
   {
     question: 'How long does it take to receive my product?',
     answer: 'Delivery is instant! After your payment is confirmed, you\'ll receive download links and license keys directly in the Telegram chat.',
-  },
-  {
-    question: 'Do you offer refunds?',
-    answer: 'Yes, we offer a 14-day money-back guarantee on all products. If you\'re not satisfied, contact us for a full refund.',
   },
   {
     question: 'Can I use products for commercial projects?',
@@ -43,10 +39,6 @@ const faqs = [
   {
     question: 'Do you offer custom development?',
     answer: 'Yes, we take on custom projects. Contact us via Telegram or email with your requirements for a quote.',
-  },
-  {
-    question: 'How do updates work?',
-    answer: 'All products include lifetime updates. When we release an update, you\'ll be notified and can download the new version from the bot.',
   },
 ];
 

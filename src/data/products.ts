@@ -14,6 +14,7 @@ export interface Product {
   badge?: string;
   stock?: 'in-stock' | 'out-of-stock';
   image: string;
+  waitingTime?: string;
 }
 
 import KanBarProImg from '@/assets/products/KanBar-pro.png';
@@ -38,6 +39,7 @@ export const products: Product[] = [
     category: 'editingSubs',
     badge: 'Popular',
     image: KanBarProImg,
+    waitingTime: '30 minutes',
     features: [
       '100+ million premium templates',
       'Background remover tool',
@@ -76,6 +78,7 @@ export const products: Product[] = [
     price: 15000,
     category: 'aiSubs',
     image: ChatGyiPlusImg,
+    waitingTime: '2 hours',
     features: [
       'ဂျီပီတီ-5.2 access',
       'ဒဲ-e 3 image generation',
@@ -114,6 +117,7 @@ export const products: Product[] = [
     category: 'aiSubs',
     badge: 'Value',
     image: ChatGyiGoImg,
+    waitingTime: '2 hours',
     features: [
       'ဂျီပီတီ-5 mini responses tuned for speed',
       'Unlimited chats with fair use protections',
@@ -152,6 +156,7 @@ export const products: Product[] = [
     category: 'learningSubs',
     badge: 'Best Seller',
     image: DuoLearningPlusImg,
+    waitingTime: '30 minutes',
     features: [
       'Unlimited ❤️',
       'No ads',
@@ -227,6 +232,7 @@ export const products: Product[] = [
     price: 10000,
     category: 'learningSubs',
     image: SSLearningPremiumImg,
+    waitingTime: '2 hours',
     features: [
       'Unlimited class access',
       '30,000+ creative classes',
@@ -303,6 +309,7 @@ export const products: Product[] = [
     price: 12000,
     category: 'moviesSubs',
     image: DiMoviesPlusImg,
+    waitingTime: '2 hours',
     features: [
       '4K HDR + Dolby Vision/Atmos support',
       'Watch on up to 4 screens simultaneously',

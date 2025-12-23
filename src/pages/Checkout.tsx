@@ -7,21 +7,21 @@ import { Button } from '@/components/ui/button';
 const steps = [
   {
     icon: MessageCircle,
-    title: 'Start the Bot',
-    description: 'Click "Buy on Telegram" on any product page. This opens our Telegram bot where you can browse and select products.',
-    detail: 'Our bot is available 24/7 and responds instantly.',
+    title: 'Start the Telegram',
+    description: 'Click "Buy on Telegram" on any product page. This opens our Admin Telegram Account where you can browse and select products.',
+    detail: 'Our Admin is available 24/7 and responds instantly.',
   },
   {
     icon: CreditCard,
     title: 'Make Payment',
-    description: 'The bot generates a secure payment link. We accept cards, crypto, and various payment methods through our secure gateway.',
+    description: 'Admin will give you a payment( Kpay/Wave/Binance ). We accept crypto, and various payment methods through our secure gateway.',
     detail: 'All transactions are encrypted and secure.',
   },
   {
     icon: Download,
     title: 'Get Your Product',
-    description: 'After payment confirmation, you immediately receive download links and license keys directly in the chat.',
-    detail: 'No waiting - instant delivery via Telegram.',
+    description: 'After payment confirmation, you immediately receive download links and license keys or account directly in the chat.',
+    detail: 'Depending on the product, there may be a slight waiting time - we will deliver via Telegram as soon as possible.',
   },
   {
     icon: CheckCircle,

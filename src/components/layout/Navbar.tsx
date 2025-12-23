@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Zap } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { motion, AnimatePresence } from 'framer-motion';
+import LogoMark from '@/assets/logo.svg';
 
 const navLinks = [
   { href: '/', label: 'Home' },
@@ -21,8 +22,8 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 rounded-lg bg-gradient-primary flex items-center justify-center shadow-glow group-hover:shadow-[0_0_40px_hsl(var(--primary)/0.5)] transition-all duration-300">
-              <Zap className="w-5 h-5 text-primary-foreground" />
+            <div className="w-10 h-10 relative rounded-lg overflow-hidden border border-transparent transition duration-200 ease-out hover:scale-[1.02] hover:border-primary/25 motion-reduce:transition-none motion-reduce:hover:scale-100">
+              <img src={LogoMark} alt="AlphaTech logo" className="w-full h-full object-cover" />
             </div>
             <span className="font-display font-bold text-xl text-foreground">
               Alpha<span className="text-gradient">Tech</span>

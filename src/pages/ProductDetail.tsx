@@ -1,6 +1,6 @@
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowLeft, Ban, MessageCircle, Check, ChevronDown } from 'lucide-react';
+import { ArrowLeft, Ban, MessageCircle, Check, ChevronDown, Clock } from 'lucide-react';
 import { Layout } from '@/components/layout/Layout';
 import { SEO } from '@/components/SEO';
 import { Button } from '@/components/ui/button';
@@ -200,6 +200,13 @@ export default function ProductDetail() {
                       {isOutOfStock ? 'Currently unavailable' : 'One-time payment'}
                     </span>
                   </div>
+
+                  {product.waitingTime && (
+                    <div className="flex items-center gap-3 p-4 mb-6 rounded-xl bg-amber-50 border border-amber-200 text-amber-800">
+                      <Clock className="w-5 h-5" />
+                      <span className="font-medium">Waiting time: {product.waitingTime}</span>
+                    </div>
+                  )}
 
                   {/* CTA */}
                   <Button
