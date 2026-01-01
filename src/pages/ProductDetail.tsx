@@ -18,6 +18,33 @@ export default function ProductDetail() {
 
   const isOutOfStock = product.stock === 'out-of-stock';
   const telegramHref = `https://${product.telegramLink}`;
+  const originalPrice = product.originalPrice ?? product.price + 5000;
+  const discountAmount = Math.max(originalPrice - product.price, 0);
+  const hasDiscount = !isOutOfStock && discountAmount > 0;
+  const disclaimerCopy: Record<string, { title: string; paragraphs: string[] }> = {
+    'digital-creative-workspace-pro': {
+      title: 'Disclaimer:',
+      paragraphs: [
+        'This service is not affiliated with, endorsed by, or officially connected to Adobe Inc. or any software publisher.',
+        'All trademarks and product names belong to their respective owners and are used for descriptive purposes only.'
+      ]
+    },
+    'mobile-photo-editing-workspace': {
+      title: 'Disclaimer:',
+      paragraphs: [
+        'This service is not affiliated with, endorsed by, or officially connected to PicsArt, Inc. or any software publisher.',
+        'All trademarks and product names belong to their respective owners and are used for descriptive purposes only.'
+      ]
+    },
+    'music-streaming-workspace': {
+      title: 'Disclaimer:',
+      paragraphs: [
+        'This service is not affiliated with, endorsed by, or officially connected to TIDAL, Inc. or any music streaming platform.',
+        'All trademarks and product names belong to their respective owners and are used for descriptive purposes only.'
+      ]
+    }
+  };
+  const disclaimer = disclaimerCopy[product.slug];
 
   return (
     <Layout>
@@ -175,20 +202,20 @@ export default function ProductDetail() {
                   {/* Price */}
                   <div className="mb-6">
                     <div className="flex items-center gap-2 mb-1">
-                      {!isOutOfStock ? (
+                      {hasDiscount ? (
                         <>
                           <span className="text-sm line-through text-muted-foreground">
-                            {(product.price + 5000).toLocaleString()} MMK
+                            {originalPrice.toLocaleString()} MMK
                           </span>
                           <Badge className="bg-green-500/20 text-green-400 border-green-500/30">
-                            5,000 MMK OFF
+                            {discountAmount.toLocaleString()} MMK OFF
                           </Badge>
                         </>
-                      ) : (
+                      ) : isOutOfStock ? (
                         <Badge className="bg-destructive/10 text-destructive border-destructive/30">
                           Out of Stock
                         </Badge>
-                      )}
+                      ) : null}
                     </div>
                     <div className="flex items-baseline gap-2">
                       <span className="font-display font-bold text-4xl text-foreground">
@@ -228,7 +255,7 @@ export default function ProductDetail() {
                         rel="noopener noreferrer"
                       >
                         <MessageCircle className="w-5 h-5" />
-                        Buy on Telegram
+                        Check on Telegram
                       </a>
                     )}
                   </Button>
@@ -241,7 +268,7 @@ export default function ProductDetail() {
                   <div className="space-y-3 pt-6 border-t border-border">
                     <div className="flex items-center gap-3 text-sm">
                       <Check className="w-4 h-4 text-primary" />
-                      <span className="text-muted-foreground">Use 5,000 MMK discount</span>
+                      <span className="text-muted-foreground">Use discounts</span>
                     </div>
                     <div className="flex items-center gap-3 text-sm">
                       <Check className="w-4 h-4 text-primary" />
@@ -264,6 +291,17 @@ export default function ProductDetail() {
               </motion.div>
             </div>
           </div>
+
+          {disclaimer && (
+            <div className="mt-12 rounded-xl border border-border bg-card/60 p-6 text-sm text-muted-foreground">
+              <p className="font-medium text-foreground">{disclaimer.title}</p>
+              {disclaimer.paragraphs.map((paragraph, index) => (
+                <p key={paragraph} className={index === 0 ? 'mt-2' : 'mt-3'}>
+                  {paragraph}
+                </p>
+              ))}
+            </div>
+          )}
         </div>
       </section>
     </Layout>

@@ -6,7 +6,7 @@ import { Layout } from '@/components/layout/Layout';
 import { SEO } from '@/components/SEO';
 import { ProductCard } from '@/components/ProductCard';
 import { Button } from '@/components/ui/button';
-import { products, categories, priceRanges, filterProducts } from '@/data/products';
+import { categories, priceRanges, filterProducts } from '@/data/products';
 
 export default function Products() {
   const [searchParams, setSearchParams] = useSearchParams();

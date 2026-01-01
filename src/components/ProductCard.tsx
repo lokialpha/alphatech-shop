@@ -99,7 +99,7 @@ export function ProductCard({ product, index = 0 }: ProductCardProps) {
                 rel="noopener noreferrer"
               >
                 <MessageCircle className="w-4 h-4" />
-                Buy on Telegram
+                Check on Telegram
               </a>
             )}
           </Button>

@@ -5,6 +5,7 @@ export interface Product {
   shortDescription: string;
   fullDescription: string;
   price: number;
+  originalPrice?: number;
   category: 'editingSubs' | 'aiSubs' | 'learningSubs' | 'moviesSubs' | 'musicSubs';
   features: string[];
   requirements: string[];
@@ -25,6 +26,9 @@ import NetMoviesPremiumImg from '@/assets/products/Net-Movies-premium.png';
 import DiMoviesPlusImg from '@/assets/products/Di-Movies-plus.png';
 import SSLearningPremiumImg from '@/assets/products/SS-Learning-premium.png';
 import SpotiPremiumImg from '@/assets/products/Spoti.png';
+import ADBCreativeCloudProImg from '@/assets/products/digitalcc.png';
+import MobilePhotoWorkspaceImg from '@/assets/products/Mobile-Photo-Workspace.png';
+import MusicStreamingWorkspaceImg from '@/assets/products/Music-Streaming-Workspace.png';
 
 
 // Product Data
@@ -185,44 +189,45 @@ export const products: Product[] = [
     ],
     telegramLink: 't.me/lokialpha'
   },
-  {
-    id: '4',
-    slug: 'Net-Movies-premium',
-    title: 'Net-Movies Premium',
-    shortDescription: 'Premium Net-Movies subscription with 4K Ultra HD, multiple screens, and all content.',
-    fullDescription: 'Stream unlimited movies and TV shows with Net-Movies Premium. Watch on 4 screens at once in 4K Ultra HD quality. Download and watch offline on any device.',
-    price: 15000,
-    category: 'moviesSubs',
-    stock: 'out-of-stock',
-    image: NetMoviesPremiumImg,
-    features: [
-      '4K Ultra HD streaming',
-      'Watch on 4 screens',
-      'Unlimited movies & shows',
-      'Download for offline',
-      'No ads experience',
-      'New releases weekly'
-    ],
-    requirements: [
-      'Valid email address',
-      'Net-Movies app or browser',
-      'Internet connection'
-    ],
-    whatsIncluded: [
-      '1 Month Net-Movies Premium subscription',
-      '4K Ultra HD quality',
-      'Watch on 4 devices simultaneously',
-      'Download for offline viewing',
-      'Instant account activation',
-      '24hr support with admin'
-    ],
-    faq: [
-      { question: 'How do I receive my subscription?', answer: 'After payment, you\'ll receive login credentials via Telegram within 5 minutes.' },
-      { question: 'Which devices are supported?', answer: 'Smart TVs, phones, tablets, laptops, gaming consoles - watch anywhere!' },
-      { question: 'Can I download for offline viewing?', answer: 'Yes! Download your favorite shows and movies to watch offline.' }
-    ],
-    telegramLink: 't.me/lokialpha'
-  },
+  // {
+  //   id: '4',
+  //   slug: 'Net-Movies-premium',
+  //   title: 'Net-Movies Premium',
+  //   shortDescription: 'Premium Net-Movies subscription with 4K Ultra HD, multiple screens, and all content.',
+  //   fullDescription: 'Stream unlimited movies and TV shows with Net-Movies Premium. Watch on 4 screens at once in 4K Ultra HD quality. Download and watch offline on any device.',
+  //   price: 15000,
+  //   category: 'moviesSubs',
+  //   stock: 'out-of-stock',
+  //   image: NetMoviesPremiumImg,
+  //   features: [
+  //     '4K Ultra HD streaming',
+  //     'Watch on 4 screens',
+  //     'Unlimited movies & shows',
+  //     'Download for offline',
+  //     'No ads experience',
+  //     'New releases weekly'
+  //   ],
+  //   requirements: [
+  //     'Valid email address',
+  //     'Net-Movies app or browser',
+  //     'Internet connection'
+  //   ],
+  //   whatsIncluded: [
+  //     '1 Month Net-Movies Premium subscription',
+  //     '4K Ultra HD quality',
+  //     'Watch on 4 devices simultaneously',
+  //     'Download for offline viewing',
+  //     'Instant account activation',
+  //     '24hr support with admin'
+  //   ],
+  //   faq: [
+  //     { question: 'How do I receive my subscription?', answer: 'After payment, you\'ll receive login credentials via Telegram within 5 minutes.' },
+  //     { question: 'Which devices are supported?', answer: 'Smart TVs, phones, tablets, laptops, gaming consoles - watch anywhere!' },
+  //     { question: 'Can I download for offline viewing?', answer: 'Yes! Download your favorite shows and movies to watch offline.' }
+  //   ],
+  //   telegramLink: 't.me/lokialpha'
+  // },
+
   {
     id: '5',
     slug: 'SS-Learning-premium',
@@ -261,81 +266,199 @@ export const products: Product[] = [
     ],
     telegramLink: 't.me/lokialpha'
   },
+  // {
+  //   id: '6',
+  //   slug: 'Spoti-premium',
+  //   title: 'Spoti Premium',
+  //   shortDescription: 'Premium Spoti subscription with ad-free music, offline downloads, and unlimited skips.',
+  //   fullDescription: 'Stream unlimited music with Spoti Premium. Enjoy ad-free listening, download songs for offline, unlimited skips, and high-quality audio on any device.',
+  //   price: 8000,
+  //   category: 'musicSubs',
+  //   badge: 'Premium',
+  //   stock: 'out-of-stock',
+  //   image: SpotiPremiumImg,
+  //   features: [
+  //     'Ad-free music streaming',
+  //     'Unlimited skips',
+  //     'Offline downloads',
+  //     'High-quality audio',
+  //     '100M+ songs library',
+  //     'Podcasts included'
+  //   ],
+  //   requirements: [
+  //     'Valid email address',
+  //     'Spoti app or browser',
+  //     'Internet connection'
+  //   ],
+  //   whatsIncluded: [
+  //     '1 Month Spoti Premium subscription',
+  //     'Ad-free music experience',
+  //     'Download for offline listening',
+  //     'High-quality audio (320kbps)',
+  //     'Instant account activation',
+  //     '24hr support with admin'
+  //   ],
+  //   faq: [
+  //     { question: 'How do I receive my subscription?', answer: 'After payment, you\'ll receive login credentials via Telegram within 5 minutes.' },
+  //     { question: 'Can I download songs for offline?', answer: 'Yes! Download unlimited songs and playlists to listen offline.' },
+  //     { question: 'Which devices are supported?', answer: 'Phone, tablet, computer, smart speakers, gaming consoles, and car audio systems.' }
+  //   ],
+  //   telegramLink: 't.me/lokialpha'
+  // },
+
+  // {
+  //   id: '7',
+  //   slug: 'Di-Movies-plus',
+  //   title: 'Di-Movies Plus',
+  //   shortDescription: 'Disney-style library in 4K HDR with offline downloads and multiple profiles.',
+  //   fullDescription: 'Enjoy a Disney-inspired streaming experience with Di-Movies Plus: 4K HDR and Dolby-ready playback, ad-free streaming, multiple profiles, downloads for offline trips, and fresh movies, series, and originals added every week.',
+  //   price: 12000,
+  //   category: 'moviesSubs',
+  //   image: DiMoviesPlusImg,
+  //   waitingTime: '2 hours',
+  //   features: [
+  //     '4K HDR + Dolby Vision/Atmos support',
+  //     'Watch on up to 4 screens simultaneously',
+  //     'Profiles for family members with kids mode',
+  //     'Offline downloads for trips and flights',
+  //     'Ad-free viewing experience',
+  //     'Weekly new movies, series, and originals'
+  //   ],
+  //   requirements: [
+  //     'Valid email address',
+  //     'Di-Movies app or browser',
+  //     '10 Mbps+ internet for 4K'
+  //   ],
+  //   whatsIncluded: [
+  //     '1 Month Di-Movies Plus subscription',
+  //     '4K HDR & Dolby-enabled streams',
+  //     'Up to 4 simultaneous devices',
+  //     'Unlimited downloads for offline',
+  //     'Instant account activation',
+  //     '24hr support with admin'
+  //   ],
+  //   faq: [
+  //     { question: 'How do I receive my subscription?', answer: 'After payment, you\'ll receive login credentials via Telegram within 5 minutes.' },
+  //     { question: 'Can I watch on TV?', answer: 'Yes! Use smart TVs, streaming sticks, or cast from your phone.' },
+  //     { question: 'Does it support offline downloads?', answer: 'Yes, download movies and episodes to watch without internet.' },
+  //     { question: 'How many devices can stream?', answer: 'Up to 4 devices can stream at the same time on one account.' }
+  //   ],
+  //   telegramLink: 't.me/lokialpha'
+  // },
   {
-    id: '6',
-    slug: 'Spoti-premium',
-    title: 'Spoti Premium',
-    shortDescription: 'Premium Spoti subscription with ad-free music, offline downloads, and unlimited skips.',
-    fullDescription: 'Stream unlimited music with Spoti Premium. Enjoy ad-free listening, download songs for offline, unlimited skips, and high-quality audio on any device.',
-    price: 8000,
-    category: 'musicSubs',
-    badge: 'Premium',
-    stock: 'out-of-stock',
-    image: SpotiPremiumImg,
+    id: '9',
+    slug: 'digital-creative-workspace-pro',
+    title: 'Creative Workspace',
+    shortDescription: '4-month Digital Creative Workspace Pro plan with full access to apps.',
+    fullDescription: 'Get a 4-month Digital Creative Workspace Pro subscription with access assistance to professional creative software tools. Regular price 40,000 MMK, now 30,000 MMK with a 10,000 MMK discount.',
+    price: 30000,
+    originalPrice: 40000,
+    category: 'editingSubs',
+    badge: '4 Months',
+    image: ADBCreativeCloudProImg,
+    waitingTime: '30 minutes',
     features: [
-      'Ad-free music streaming',
-      'Unlimited skips',
-      'Offline downloads',
-      'High-quality audio',
-      '100M+ songs library',
-      'Podcasts included'
+      'Access assistance for a full suite',
+      'Asset libraries for creative workflows',
+      'Cloud based file synchronization',
+      'Ongoing updates and resources'
     ],
     requirements: [
       'Valid email address',
-      'Spoti app or browser',
-      'Internet connection'
+      'Windows or macOS device',
+      'Stable internet connection'
     ],
     whatsIncluded: [
-      '1 Month Spoti Premium subscription',
-      'Ad-free music experience',
-      'Download for offline listening',
-      'High-quality audio (320kbps)',
-      'Instant account activation',
+      '4 Months access period',
+      'Access assistance for a full suite of professional creative software tools',
+      'Cloud based file synchronization',
+      'Asset libraries for creative workflows',
       '24hr support with admin'
     ],
     faq: [
-      { question: 'How do I receive my subscription?', answer: 'After payment, you\'ll receive login credentials via Telegram within 5 minutes.' },
-      { question: 'Can I download songs for offline?', answer: 'Yes! Download unlimited songs and playlists to listen offline.' },
-      { question: 'Which devices are supported?', answer: 'Phone, tablet, computer, smart speakers, gaming consoles, and car audio systems.' }
+      { question: 'How do I receive product?', answer: 'After payment, you\'ll receive setup instructions and access details via Telegram within 5 minutes.' },
+      { question: 'Is this a personal usage?', answer: 'Yes, this is a personal Creative Usage with assisted access to professional tools.' },
+      { question: 'Can I use it on multiple devices?', answer: 'Yes, you can use it on two devices and activate one at a time.' }
     ],
     telegramLink: 't.me/lokialpha'
   },
   {
-    id: '7',
-    slug: 'Di-Movies-plus',
-    title: 'Di-Movies Plus',
-    shortDescription: 'Disney-style library in 4K HDR with offline downloads and multiple profiles.',
-    fullDescription: 'Enjoy a Disney-inspired streaming experience with Di-Movies Plus: 4K HDR and Dolby-ready playback, ad-free streaming, multiple profiles, downloads for offline trips, and fresh movies, series, and originals added every week.',
-    price: 12000,
-    category: 'moviesSubs',
-    image: DiMoviesPlusImg,
-    waitingTime: '2 hours',
+    id: '10',
+    slug: 'mobile-photo-editing-workspace',
+    title: 'Mobile Photo Editing',
+    shortDescription: '1-month mobile photo editing plan with mobile-style editing tools, filters, and templates.',
+    fullDescription: 'Get a 1-month Mobile Photo Editing Workspace subscription with mobile-style editing tools for filters, stickers, collages, background removal, AI enhancements, and ready-made templates. Regular price 20,000 MMK, now 15,000 MMK with a 5,000 MMK discount.',
+    price: 15000,
+    originalPrice: 20000,
+    category: 'editingSubs',
+    badge: '1 Month',
+    image: MobilePhotoWorkspaceImg,
+    waitingTime: '30 minutes',
     features: [
-      '4K HDR + Dolby Vision/Atmos support',
-      'Watch on up to 4 screens simultaneously',
-      'Profiles for family members with kids mode',
-      'Offline downloads for trips and flights',
-      'Ad-free viewing experience',
-      'Weekly new movies, series, and originals'
+      'Advanced photo editor with pro filters',
+      'Background remover and AI retouch tools',
+      'Collage maker and template library',
+      'Sticker packs and creative overlays',
+      'Text styles, fonts, and effects',
+      'HD export and watermark-free saves'
     ],
     requirements: [
       'Valid email address',
-      'Di-Movies app or browser',
-      '10 Mbps+ internet for 4K'
+      'Android or iOS device',
+      'Stable internet connection'
     ],
     whatsIncluded: [
-      '1 Month Di-Movies Plus subscription',
-      '4K HDR & Dolby-enabled streams',
-      'Up to 4 simultaneous devices',
-      'Unlimited downloads for offline',
+      '1 Month Mobile Photo Editing Workspace access period',
+      'Access to all premium editing tools',
+      'Template and sticker library access',
+      'AI-powered enhancements',
       'Instant account activation',
       '24hr support with admin'
     ],
     faq: [
-      { question: 'How do I receive my subscription?', answer: 'After payment, you\'ll receive login credentials via Telegram within 5 minutes.' },
-      { question: 'Can I watch on TV?', answer: 'Yes! Use smart TVs, streaming sticks, or cast from your phone.' },
-      { question: 'Does it support offline downloads?', answer: 'Yes, download movies and episodes to watch without internet.' },
-      { question: 'How many devices can stream?', answer: 'Up to 4 devices can stream at the same time on one account.' }
+      { question: 'How do I receive product?', answer: 'After payment, you\'ll receive setup instructions and access details via Telegram within 5 minutes.' },
+      { question: 'Can I use it on multiple devices?', answer: 'Yes, you can sign in on multiple devices with the same account.' },
+      { question: 'Does it include premium templates?', answer: 'Yes, you get full access to premium templates and creative assets.' }
+    ],
+    telegramLink: 't.me/lokialpha'
+  },
+  {
+    id: '11',
+    slug: 'music-streaming-workspace',
+    title: 'Music Streaming',
+    shortDescription: '1-month access plan with setup support for premium, ad-free, lossless music streaming.',
+    fullDescription: 'This plan provides access assistance and setup support for a premium music streaming experience with high-quality, lossless audio, ad-free listening, and offline playback features. It is designed for personal music enjoyment and studio-quality listening across supported devices.',
+    price: 8000,
+    originalPrice: 13000,
+    category: 'musicSubs',
+    badge: '1 Month',
+    image: MusicStreamingWorkspaceImg,
+    waitingTime: '5-30 minutes',
+    features: [
+      'High-quality and lossless audio streaming',
+      'Ad-free music listening experience',
+      'Offline listening support',
+      'Personalized playlists and recommendations',
+      'Multi-device listening (activate one at a time)',
+      '24hr support with admin'
+    ],
+    requirements: [
+      'Valid email address',
+      'Android, iOS, or desktop device',
+      'Stable internet connection'
+    ],
+    whatsIncluded: [
+      '1 Month access period',
+      'Access assistance and setup support',
+      'Premium music streaming features',
+      'Offline playback support',
+      'Instant account activation',
+      '24hr support with admin'
+    ],
+    faq: [
+      { question: 'How do I receive product?', answer: 'After payment, you\'ll receive setup instructions and access details via Telegram within 5-30 minutes.' },
+      { question: 'Is this for personal use?', answer: 'Yes, this plan is designed for personal music enjoyment.' },
+      { question: 'Can I listen on multiple devices?', answer: 'Yes, you can sign in on multiple devices and activate one at a time.' }
     ],
     telegramLink: 't.me/lokialpha'
   }
@@ -357,6 +480,15 @@ export const priceRanges = [
   { value: '12000+', label: '12,000+ MMK' }
 ];
 
+const getProductIdNumber = (id: string) => {
+  const parsed = Number(id);
+  return Number.isFinite(parsed) ? parsed : 0;
+};
+
+export function sortProductsByNewest(items: Product[]): Product[] {
+  return [...items].sort((a, b) => getProductIdNumber(b.id) - getProductIdNumber(a.id));
+}
+
 export function getProductBySlug(slug: string): Product | undefined {
   return products.find(p => p.slug === slug);
 }
@@ -365,7 +497,7 @@ export function filterProducts(
   category: string,
   priceRange: string
 ): Product[] {
-  return products.filter(product => {
+  const filteredProducts = products.filter(product => {
     const categoryMatch = category === 'all' || product.category === category;
     
     let priceMatch = true;
@@ -376,7 +508,8 @@ export function filterProducts(
     } else if (priceRange === '12000+') {
       priceMatch = product.price > 12000;
     }
-    
     return categoryMatch && priceMatch;
   });
+
+  return sortProductsByNewest(filteredProducts);
 }

@@ -5,7 +5,7 @@ import { Layout } from '@/components/layout/Layout';
 import { SEO } from '@/components/SEO';
 import { Button } from '@/components/ui/button';
 import { ProductCard } from '@/components/ProductCard';
-import { products } from '@/data/products';
+import { products, sortProductsByNewest } from '@/data/products';
 
 const highlights = [
   {
@@ -32,7 +32,7 @@ const trustBadges = [
 ];
 
 export default function Home() {
-  const featuredProducts = products.slice(0, 3);
+  const featuredProducts = sortProductsByNewest(products).slice(0, 3);
 
   return (
     <Layout>
