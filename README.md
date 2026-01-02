@@ -83,7 +83,13 @@ This approach reflects a **practical, step-by-step product mindset**.
 
 ## 📂 Project Structure
 
-. ├── index.html        # Main shop interface ├── assets/           # Styles, scripts, images ├── products/         # Product-related logic └── README.md
+```text
+.
+├── index.html        # Main shop interface
+├── assets/           # Styles, scripts, images
+├── products/         # Product-related logic
+└── README.md
+```
 
 ---
 
